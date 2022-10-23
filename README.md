@@ -28,12 +28,7 @@ You can resize the terminal while a video is playing and the resolution will adj
 The idea is turn every pixel of the source image into a character in the terminal (modulo resizing to make sure the image fits). Using the VT100 escape sequences,
 we can control the color for each individual character that we print. To get a uniform color for each character, we could use the block character `█`. However, we can pack the pixels more densely by using the Unicode Lower Half Block character `▄` (`\u2584`). This gives two pixels per character by setting the foreground and background colors for each character.
 
-<span style="background-color: red;">▄</span>
-<span style="background-color: green;">▄</span>
-<span style="background-color: blue;">▄</span>
-<span style="background-color: cyan;">▄</span>
-<span style="background-color: magenta;">▄</span>
-<span style="background-color: yellow;">▄</span>
+![](unicode.png)
 
 These 'pixels' also resemble a square a bit more than the normal height characters so as a bonus, the image is not too stretched.
 
